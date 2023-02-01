@@ -6,7 +6,11 @@ let counterValue = 0;
 
 const subtrClick = () => {
     counterValue -=1;
+    if (counterValue < 0) {
+      counterValue = 0;
+    }
     valueOutput.textContent = counterValue;
+
   };
 
 const addClick = () => {
