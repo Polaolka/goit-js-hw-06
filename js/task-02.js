@@ -6,15 +6,20 @@ const ingredients = [
   'Herbs',
   'Condiments',
 ];
+
 const listElem = document.querySelector("#ingredients");
 
-const createLi = function(arr) {
-  for (const ing of arr) {
+
+const createLiArr = [];
+
+  for (const ing of ingredients) {
     const liItemEl = document.createElement("li");
     liItemEl.classList.add('item')
     liItemEl.textContent = ing;
-    listElem.append(liItemEl);
+    createLiArr.push(liItemEl)
   }
-}
 
-createLi(ingredients);
+createLiArr.reduce((result, liItemEl) => {
+  return result += listElem.append(liItemEl);
+}, 0);
+
