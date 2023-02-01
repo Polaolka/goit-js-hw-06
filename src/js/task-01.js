@@ -1,7 +1,7 @@
 // Завдання 1:
-const numOfCategories = document.querySelectorAll('.item');
+const ulEl = document.querySelectorAll('.item');
 
-console.log(`Number of categories: ${numOfCategories.length}`);
+console.log(`Number of categories: ${ulEl.length}`);
 
 
 const getCategoryes = function (arr) {
@@ -15,4 +15,4 @@ const getCategoryes = function (arr) {
     }
 
 }
-getCategoryes(numOfCategories);
+getCategoryes(ulEl);
