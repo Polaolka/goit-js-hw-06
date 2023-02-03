@@ -7,7 +7,7 @@ const refs = {
   buttonDestroyEl: document.querySelector('[data-destroy]'),
   divBoxesEl: document.querySelector('#boxes'),
 }
-console.log(refs.divBoxesEl);
+
 refs.numberEl.addEventListener('change', getNumberOfBox);
 refs.buttonCreateEl.addEventListener('click', createBoxMarkup);
 refs.buttonDestroyEl.addEventListener('click', onButtonDestroy);
@@ -30,8 +30,6 @@ function createBoxMarkup(event) {
     boxMarkup +=`<div class="box" style="width: ${size += 10}px; height: ${size}px; background-color: ${getRandomHexColor()};"></div>\n`
   }
   refs.divBoxesEl.insertAdjacentHTML("afterbegin", boxMarkup);
-  console.log(boxMarkup);
-  console.log(numberOfBox);
   refs.numberEl.value = '';
 }
 
