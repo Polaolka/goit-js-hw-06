@@ -38,3 +38,10 @@ button {
   max-width: 100%;
   object-fit: cover;
 }
+#boxes {
+  padding-top: 20px;
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  flex-wrap: wrap;
+}
