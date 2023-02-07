@@ -25,8 +25,9 @@ function createBoxMarkup(event) {
 
   let boxMarkup = ``;
   let size = 20;
+  refs.divBoxesEl.innerHTML = "";
   for (let idx = 0; idx < numberOfBox; idx += 1) {
-
+    
     boxMarkup +=`<div class="box" style="width: ${size += 10}px; height: ${size}px; background-color: ${getRandomHexColor()};"></div>\n`
   }
   refs.divBoxesEl.insertAdjacentHTML("afterbegin", boxMarkup);
