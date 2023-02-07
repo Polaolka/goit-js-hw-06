@@ -7,6 +7,5 @@ function onInputChange(event) {
     if (textInput.value.length !== Number(textInput.dataset.length)) {
         textInput.classList.add('invalid')
     } else {
-        textInput.classList.remove('invalid')
-        textInput.classList.add('valid')}
+        textInput.classList.replace('invalid', 'valid')}
 }
