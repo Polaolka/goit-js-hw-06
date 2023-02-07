@@ -4,7 +4,7 @@ const refs = {
     textOutput: document.querySelector('#text'),
 }
 
-refs.sliderInput.addEventListener('change', onSliderInput);
+refs.sliderInput.addEventListener('input', onSliderInput);
 
 function onSliderInput(event) {
 
