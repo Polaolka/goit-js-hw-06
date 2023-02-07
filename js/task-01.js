@@ -3,10 +3,7 @@ const ulEl = document.querySelectorAll('.item');
 
 console.log(`Number of categories: ${ulEl.length}`);
 
-
-const getCategoryes = function (arr) {
-
-    for (const item of arr) {
+    for (const item of ulEl) {
         let nameCat = item.querySelector('h2').textContent;
         console.log(`Elements: ${nameCat}`);
         let countElements = item.querySelectorAll('li').length;
@@ -14,5 +11,4 @@ const getCategoryes = function (arr) {
         console.log(`Elements: ${countElements}`);
     }
 
-}
-getCategoryes(ulEl);
+

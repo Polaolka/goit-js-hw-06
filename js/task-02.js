@@ -19,7 +19,6 @@ const createLiArr = [];
     createLiArr.push(liItemEl)
   }
 
-createLiArr.reduce((result, liItemEl) => {
-  return result += listElem.append(liItemEl);
-}, 0);
+  listElem.append(...createLiArr);
+
 
